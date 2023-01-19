@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students Marks</title>
+  </head>
+  <body>
+    <h1>Student Result</h1>
+
+    <script>
+      var eng = parseInt(prompt("Enter The  Marks Of English"));
+      var hindi = parseInt(prompt("Enter The Marks Of Hindi"));
+      var maths = parseInt(prompt("Enter the Marks of Maths"));
+      var phy = parseInt(prompt("enter the marks of Physics"));
+      var che = parseInt(prompt("enter the marks of Che istry"));
+      var total = eng + hindi + maths + phy + che;
+      var parcentage = total / 5;
+      document.write("Total : " + total);
+      document.write("<br/>parcentage is :" + parcentage);
+      if (parcentage > 80) {
+        grade = "A";
+      } else if (parcentage > 60 && parcentage <= 80) {
+        grade = "B";
+      } else if (parcentage > 45 && parcentage <= 60) {
+        grade = "C";
+      } else {
+        grade = "Fail";
+      }
+      document.write("<br/> you get Grade: " + grade);
+    </script>
+  </body>
+</html>
